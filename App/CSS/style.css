@@ -290,7 +290,7 @@ color: var(--first-color);
   row-gap: 3rem;
 }
 .home__data {
-  text-align: right;
+  text-align: center;
 }
 
 .home__subtitle {
@@ -1012,7 +1012,6 @@ gap: 1.25rem;
   .home__container {
     grid-template-columns: repeat(2, max-content);
     align-items: initial;
-    margin-right: 3rem;
   }
   .home__title {
     margin: .75rem 0 1.25rem;
@@ -1078,6 +1077,7 @@ gap: 1.25rem;
 
     .home__data {
       padding-top: 3rem;
+      margin-left: 2rem;
     }
 
     .program__container {
