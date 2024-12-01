@@ -1012,6 +1012,7 @@ gap: 1.25rem;
   .home__container {
     grid-template-columns: repeat(2, max-content);
     align-items: initial;
+    margin-left: 2rem;
   }
   .home__title {
     margin: .75rem 0 1.25rem;
