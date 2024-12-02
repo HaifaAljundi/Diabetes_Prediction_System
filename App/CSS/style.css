@@ -640,10 +640,10 @@ border: 2px solid var(--first-color-light);
   -webkit-appearance: none;
   margin: 0;
 }
-/* 
+
 .calculate__input[type=number] {
   -moz-appearance: textfield;
-} */
+} 
 
 .calculate__label {
   position: absolute;
@@ -661,7 +661,7 @@ border: 2px solid var(--first-color-light);
   justify-self: center;
 }
 
-.calculate__message {
+.calculate-message {
   position: absolute;
   transform: translateY(1rem);
 }

@@ -83,21 +83,21 @@ sr.reveal(`.choose__content, .calculate__img`, {origin: 'right'})
 
 /* CALCULATE JS */
 const calculateForm = document.getElementById('calculate-form'),
-      calculateCm = document.getElementById('calculate-cm')
-      calculateKg = document.getElementById('calculate-kg')
-      calculateMessage = document.getElementById('calculate-message')
+      calculateCm = document.getElementById('calculate-cm'),
+      calculateKg = document.getElementById('calculate-kg'),
+      calculateMessage = document.getElementById('calculate-message');
 
-      const calculateBmi = (e) => {
+    const calculateBmi = (e) => {
         e.preventDefault();
         
-        const newbmi = {
-                height: calculateCm.value,
-                weight: calculateKg.value
-            };
-            axios.post('http://localhost:3000/api/bmi', newbmi)
-                .then(res => console.log(res.data))
-                .catch(err => console.error(err));
-
+            const newbmi = {
+                    height: calculateCm.value,
+                    weight: calculateKg.value
+                };
+                axios.post('http://localhost:3000/api/bmi', newbmi)
+                    .then(res => console.log(res.data))
+                    .catch(err => console.error(err));
+    
         if (calculateCm.value === '' || calculateKg.value === '') {
             calculateMessage.classList.remove('color-green');
             calculateMessage.classList.add('color-red');
