@@ -924,6 +924,8 @@ gap: 1.25rem;
 .choose__container {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+}
+.home__container {
   padding-left: 20%;
 }
 
